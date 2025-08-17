@@ -1,10 +1,10 @@
 {
   "name": "aethercode",
   "private": true,
-  "workspaces": [
-    "packages/frontend",
-    "packages/backend",
-    "packages/ai",
-    "packages/core"
-  ]
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "front:dev": "npm run dev -w packages/frontend",
+    "front:build": "npm run build -w packages/frontend",
+    "front:preview": "npm run preview -w packages/frontend"
+  }
 }
